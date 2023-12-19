@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# butun swap kullanimlarini sirala ve dosyaya yaz.
-# -n : sayisal olarak sirala. numerical
-# -r : sonucu ters cevir. Normalde kucukten buyuge siralar ama biz buyukten kucuge gormek istiyoruz.
+# Ordering all swap usage and writing them to the file 
+# -n : sort numerically
+# -r : reverse the results. Default is small to large
 # -k : 2.kolona gore siralama yap.Default dosyanin sonuna kadar ama aralikta verilebilir.
 
 grep VmSwap /proc/*/status | sort -k 2 -n -r > tmp.txt
