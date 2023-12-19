@@ -7,7 +7,7 @@ user=""
 password=""
 destHost=""
 
-# get all pcap files and sent with scp step by step
+# get all pcap files and send with SCP step-by-step
 for file in $fromDirectory/*.pcap
         do
                 #echo "File: " $file
@@ -17,6 +17,6 @@ for file in $fromDirectory/*.pcap
                 sleep 1
                 if [ $? == "0" ]; then
                         rm -rf $file
-                        #echo " This file delete " $file
+                        #echo " This file deleted " $file
                 fi
         done
